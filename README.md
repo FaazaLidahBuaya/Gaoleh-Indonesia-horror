@@ -57,11 +57,3 @@ If you want to play the current build of the game:
 3. Extract the contents to a folder on your computer.
 4. Run the `Gaoleh.exe` file.
 5. Put on your headphones, turn off the lights, and enjoy.
-
-## 💻 Development Setup
-
-For developers who want to explore the source code:
-
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git](https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME.git)
