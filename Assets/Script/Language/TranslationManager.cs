@@ -69,14 +69,36 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Wajan", "Wok"); // Atau "Frying Pan"
         kamusInggris.Add("Pisau", "Knife");
         kamusInggris.Add("Gunting", "Scissors");
-        kamusInggris.Add("Kasur", "Mattress");
+        kamusInggris.Add("Kasur", "Bed");
         kamusInggris.Add("Guling", "Bolster");
         kamusInggris.Add("Kunci gudang", "Warehouse Key");
         kamusInggris.Add("Majalah", "Magazine");
-        kamusInggris.Add("Kain", "Fabric"); // Atau "Cloth"
         kamusInggris.Add("Sapu", "Broom");
         kamusInggris.Add("Palu", "Hammer");
         kamusInggris.Add("Jendela", "Window");
+        kamusInggris.Add("Nyala/Mati", "On/Off"); 
+        kamusInggris.Add("Buka/Tutup", "Open/Close");
+        kamusInggris.Add("Meja", "Table"); // Gunakan "Desk" jika ini meja belajar/kerja
+        kamusInggris.Add("Kumpulan bunga", "Bouquet"); // Bisa juga "Bunch of Flowers"
+        kamusInggris.Add("Ambil", "Take"); // Bisa juga "Grab" atau "Pick Up"
+        kamusInggris.Add("Kursi", "Chair");
+        kamusInggris.Add("Laci", "Drawer");
+        kamusInggris.Add("Kartu keluarga", "Family Card");
+        kamusInggris.Add("Sertifikat hak milik", "Certificate of Ownership"); // Atau "Freehold Title"
+        kamusInggris.Add("Dokumen pajak pbb", "Property Tax Document");
+        kamusInggris.Add("Catatan", "Note");
+        kamusInggris.Add("Kertas", "Paper");
+        kamusInggris.Add("Lampu", "Lamp"); // Gunakan "Light" jika merujuk ke cahayanya
+        kamusInggris.Add("Laptop", "Laptop");
+        kamusInggris.Add("Komik", "Comic");
+        kamusInggris.Add("Kulkas", "Refrigerator"); // Atau versi singkatnya "Fridge"
+        kamusInggris.Add("Kardus", "Cardboard Box");
+        kamusInggris.Add("Tumpukan box", "Stack of Boxes");
+        kamusInggris.Add("Lemari", "Wardrobe"); // Gunakan "Cabinet" jika lemari barang/pajangan
+        kamusInggris.Add("Keran", "Faucet"); // American English, atau "Tap" untuk British
+        kamusInggris.Add("Mandi", "Bath"); // Atau "Take a Bath" / "Shower" jika berupa aksi
+        kamusInggris.Add("Kasur orang tua", "Parents' Bed"); 
+        kamusInggris.Add("Tolet", "Dressing Table"); // Tolet (meja rias) bisa juga "Vanity"
         
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
