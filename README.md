@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🕯️ [Your Game Name] 
+# 🕯️ Gaoleh 
 
-**[Insert a short, spooky tagline here, e.g., "Don't look behind you..."]**
+**don't make a fuss**
 
 <img src="https://img.shields.io/badge/Made_with-Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="Made with Unity">
 <img src="https://img.shields.io/badge/Language-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#">
@@ -17,14 +17,13 @@
 
 ## 📖 About The Game
 
-**[Your Game Name]** is an atmospheric horror game developed in Unity. 
+**Gaoleh** is an atmospheric horror game developed in Unity. 
 
-*[Tulis 1-2 paragraf singkat tentang jalan cerita game kamu di sini. Contoh: "You wake up in an abandoned facility with no memory of how you got there. Armed with only a fading flashlight, you must solve puzzles and evade the creature lurking in the shadows to find a way out..."]*
+*depending on what story you choose, you will get the consequences and get an ending*
 
 ## 🩸 Key Features
 
 - **Immersive Atmosphere:** Dark, tense environments with spine-chilling sound design.
-- **Resource Management:** Limited batteries for your flashlight—use them wisely.
 - **Puzzles & Exploration:** Find hidden keys and decipher codes to unlock new areas.
 - **Unpredictable AI:** The entity adapts to your movements. You are never truly safe.
 
@@ -34,9 +33,10 @@
 | :--- | :--- |
 | Movement | `W` `A` `S` `D` |
 | Look Around | `Mouse` |
-| Interact | `E` |
+| Interact | `Lclick` |
+| Talking | `Rclick` |
 | Toggle Flashlight | `F` |
-| Sprint | `Left Shift` |
+| Phone | `E` |
 | Pause / Menu | `ESC` |
 
 ## 📸 Screenshots
@@ -55,7 +55,7 @@ If you want to play the current build of the game:
 1. Go to the [Releases](../../releases) page.
 2. Download the latest `.zip` file for your operating system (Windows/Mac/Linux).
 3. Extract the contents to a folder on your computer.
-4. Run the `[YourGameName].exe` file.
+4. Run the `Gaoleh.exe` file.
 5. Put on your headphones, turn off the lights, and enjoy.
 
 ## 💻 Development Setup
