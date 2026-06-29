@@ -106,7 +106,12 @@ public class NightManager : MonoBehaviour
             interact.enabled = false; 
         }
 
-        if (teksMalam != null) teksMalam.text = "MALAM " + malamSekarang;
+        if (teksMalam != null) 
+        {
+            string teksAsli = "MALAM " + malamSekarang;
+            teksMalam.text = TranslationManager.instance != null ? 
+                             TranslationManager.instance.Terjemahkan(teksAsli) : teksAsli;
+        }
 
         // BGM MULAI BERSAMAAN DENGAN MUNCULNYA TEKS "MALAM 1"
         if (bgmAudioSource != null && bgmMalam1 != null)
@@ -190,7 +195,12 @@ public class NightManager : MonoBehaviour
 
         if (ControlIndicatorUI.instance != null) ControlIndicatorUI.instance.UpdateFlashlightUI();
         
-        if (teksMalam != null) teksMalam.text = "MALAM " + malamSekarang;
+        if (teksMalam != null) 
+        {
+            string teksAsli = "MALAM " + malamSekarang;
+            teksMalam.text = TranslationManager.instance != null ? 
+                             TranslationManager.instance.Terjemahkan(teksAsli) : teksAsli;
+        }
         yield return new WaitForSeconds(tahanLayarHitam);
         if (teksMalam != null) teksMalam.text = "";
 

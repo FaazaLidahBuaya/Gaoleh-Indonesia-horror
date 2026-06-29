@@ -80,7 +80,9 @@ public class PlayerInteract : MonoBehaviour
                 if (crosshair != null) crosshair.color = hoverColor;
                 if (hoverText != null)
                 {
-                    hoverText.text = obj.namaObjek;
+                    // --- CEGAT NAMA OBJEK (HOVER) DI SINI ---
+                    hoverText.text = TranslationManager.instance != null ? 
+                                     TranslationManager.instance.Terjemahkan(obj.namaObjek) : obj.namaObjek;
                     hoverText.gameObject.SetActive(true);
                 }
 
@@ -166,7 +168,12 @@ public class PlayerInteract : MonoBehaviour
                 spawnedButtons.Add(objekTombolBaru);
 
                 TextMeshProUGUI teksTombol = objekTombolBaru.GetComponentInChildren<TextMeshProUGUI>();
-                if (teksTombol != null) teksTombol.text = opsi.teksTombol;
+                if (teksTombol != null) 
+                {
+                    // --- CEGAT DAN TERJEMAHKAN TEKS TOMBOL DINAMIS DI SINI ---
+                    teksTombol.text = TranslationManager.instance != null ? 
+                                      TranslationManager.instance.Terjemahkan(opsi.teksTombol) : opsi.teksTombol;
+                }
 
                 Button komponenButton = objekTombolBaru.GetComponent<Button>();
                 if (komponenButton != null)
@@ -219,14 +226,24 @@ public class PlayerInteract : MonoBehaviour
         if (currentObj != null && subtitleText != null)
         {
             if (komentarCoroutine != null) StopCoroutine(komentarCoroutine);
-            komentarCoroutine = StartCoroutine(KomentarSequence(currentObj.komentarText, currentObj.durasiKomentar));
+            
+            // --- CEGAT TEKS KOMENTAR (TOMBOL TETAP) DI SINI ---
+            string teksFinal = TranslationManager.instance != null ? 
+                               TranslationManager.instance.Terjemahkan(currentObj.komentarText) : currentObj.komentarText;
+
+            komentarCoroutine = StartCoroutine(KomentarSequence(teksFinal, currentObj.durasiKomentar));
         }
     }
 
     public void MunculkanSubtitleKustom(string teks, float durasi = 3f)
     {
         if (komentarCoroutine != null) StopCoroutine(komentarCoroutine);
-        komentarCoroutine = StartCoroutine(KomentarSequence(teks, durasi));
+        
+        // --- CEGAT SUBTITLE KUSTOM DI SINI ---
+        string teksFinal = TranslationManager.instance != null ? 
+                           TranslationManager.instance.Terjemahkan(teks) : teks;
+
+        komentarCoroutine = StartCoroutine(KomentarSequence(teksFinal, durasi));
     }
 
     private IEnumerator KomentarSequence(string teks, float durasi)

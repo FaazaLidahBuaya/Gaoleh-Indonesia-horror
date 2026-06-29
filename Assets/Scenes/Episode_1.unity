@@ -2403,6 +2403,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38698552513e6d649a9a62cbb706371f, type: 3}
+--- !u!1 &47002867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 47002869}
+  - component: {fileID: 47002868}
+  m_Layer: 0
+  m_Name: LanguageSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &47002868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47002867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 561554bedd457f247831481b91179c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TranslationManager
+  gunakanBahasaInggris: 1
+--- !u!4 &47002869
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47002867}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 891.9724, y: 486.72113, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &47296214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 28ec040ceef049e42a77e92af0b91904, type: 3}
@@ -4440,7 +4485,7 @@ MonoBehaviour:
   judulEnding: 'Ending 12: Polisi'
   narasiEnding: 'Arya menelepon polisi dan mengatakan bahwa dia melihat pocong, tetapi
     polisi mengira Arya berbohong dan langsung menutup telepon. '
-  sfxEnding: {fileID: 0}
+  sfxEnding: {fileID: 8300000, guid: 425c218e925d62d40b21d33470dcbfc4, type: 3}
   gunakanFade: 1
 --- !u!1001 &93474203
 PrefabInstance:
@@ -6259,6 +6304,7 @@ GameObject:
   - component: {fileID: 147092215}
   - component: {fileID: 147092217}
   - component: {fileID: 147092216}
+  - component: {fileID: 147092218}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6385,6 +6431,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147092214}
   m_CullTransparentMesh: 1
+--- !u!114 &147092218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147092214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1001 &147095986
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23393,6 +23451,7 @@ GameObject:
   - component: {fileID: 539095154}
   - component: {fileID: 539095156}
   - component: {fileID: 539095155}
+  - component: {fileID: 539095157}
   m_Layer: 0
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -23519,6 +23578,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 539095153}
   m_CullTransparentMesh: 1
+--- !u!114 &539095157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539095153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!4 &539968612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fff98ed63e0920040b86d15fa6f17c03, type: 3}
@@ -89807,6 +89878,7 @@ GameObject:
   - component: {fileID: 2112906561}
   - component: {fileID: 2112906563}
   - component: {fileID: 2112906562}
+  - component: {fileID: 2112906564}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -89933,6 +90005,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112906560}
   m_CullTransparentMesh: 1
+--- !u!114 &2112906564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112906560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1001 &2113090365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91702,3 +91786,4 @@ SceneRoots:
   - {fileID: 1514087788}
   - {fileID: 1940655496}
   - {fileID: 110910877}
+  - {fileID: 47002869}
