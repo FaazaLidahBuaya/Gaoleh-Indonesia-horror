@@ -53,6 +53,30 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Batal", "Cancel");
         kamusInggris.Add("Periksa", "Examine");
         kamusInggris.Add("Komentar", "Comment");
+        kamusInggris.Add("Silet", "Blade");
+        kamusInggris.Add("Kopi hitam", "Black Coffee"); // Saya tambahkan 'e' agar ejaan bahasa Inggrisnya tepat
+        kamusInggris.Add("Noda", "Stain");
+        kamusInggris.Add("Sofa", "Sofa");
+        kamusInggris.Add("Piring", "Plate");
+        kamusInggris.Add("Apel", "Apple");
+        kamusInggris.Add("Foto", "Photo");
+        kamusInggris.Add("Foto keluarga", "Family Photo");
+        kamusInggris.Add("Saklar", "Switch");
+        kamusInggris.Add("Kunci gerbang", "Gate Key");
+        kamusInggris.Add("Keris", "Keris"); // Bisa juga "Dagger", tapi "Keris" sudah diserap ke bahasa Inggris
+        kamusInggris.Add("Topi", "Hat");
+        kamusInggris.Add("Kalender", "Calendar");
+        kamusInggris.Add("Wajan", "Wok"); // Atau "Frying Pan"
+        kamusInggris.Add("Pisau", "Knife");
+        kamusInggris.Add("Gunting", "Scissors");
+        kamusInggris.Add("Kasur", "Mattress");
+        kamusInggris.Add("Guling", "Bolster");
+        kamusInggris.Add("Kunci gudang", "Warehouse Key");
+        kamusInggris.Add("Majalah", "Magazine");
+        kamusInggris.Add("Kain", "Fabric"); // Atau "Cloth"
+        kamusInggris.Add("Sapu", "Broom");
+        kamusInggris.Add("Palu", "Hammer");
+        kamusInggris.Add("Jendela", "Window");
         
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
