@@ -99,7 +99,14 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Mandi", "Bath"); // Atau "Take a Bath" / "Shower" jika berupa aksi
         kamusInggris.Add("Kasur orang tua", "Parents' Bed"); 
         kamusInggris.Add("Tolet", "Dressing Table"); // Tolet (meja rias) bisa juga "Vanity"
-        
+        kamusInggris.Add("Baju", "Clothes"); // Gunakan "Shirt" jika spesifik merujuk ke kemeja/kaos
+        kamusInggris.Add("Kain kafan", "Shroud");
+        kamusInggris.Add("Buku harian kakak", "Sibling's Diary"); // Gunakan "Sister's Diary" jika kakaknya perempuan, atau "Brother's Diary" jika laki-laki
+        kamusInggris.Add("Gelas", "Glass");
+        kamusInggris.Add("Bersihkan", "Clean");
+        kamusInggris.Add("Perbaiki posisi", "Adjust Position"); // Bisa juga "Fix Position"
+        kamusInggris.Add("Beras kuning", "Yellow Rice");
+        kamusInggris.Add("Lewati", "Skip");
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
     }
