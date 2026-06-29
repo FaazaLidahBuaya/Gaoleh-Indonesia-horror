@@ -15,7 +15,7 @@
 
 **Gaoleh** is an atmospheric horror game developed in Unity. 
 
-*depending on what story you choose, you will get the consequences and get an ending*
+*depending on what story you choose, you will get the consequences and get an ending. Your task here is to collect all the “document outputs”*
 
 ## 🩸 Key Features
 
