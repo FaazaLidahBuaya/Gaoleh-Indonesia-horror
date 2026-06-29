@@ -7,10 +7,6 @@
 <img src="https://img.shields.io/badge/Made_with-Unity-100000?style=for-the-badge&logo=unity&logoColor=white" alt="Made with Unity">
 <img src="https://img.shields.io/badge/Language-C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#">
 <img src="https://img.shields.io/badge/Status-In_Development-red?style=for-the-badge" alt="Status">
-
-<!-- Ganti URL di bawah dengan link gambar/GIF game kamu jika sudah ada -->
-<img src="https://github.com/user-attachments/assets/cb453a3a-9ea4-4a0b-8864-4ed782dadd17e" alt="Gameplay Preview" width="100%">
-
 </div>
 
 ---
