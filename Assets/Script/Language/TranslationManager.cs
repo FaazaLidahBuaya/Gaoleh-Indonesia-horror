@@ -108,6 +108,7 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Televisi", "Television");
         kamusInggris.Add("Denah rumah", "House Plan");
         kamusInggris.Add("Nomer Rumah", "House Number");
+        kamusInggris.Add("Baca", "Read");
 
         // === KOMENTAR ===
         kamusInggris.Add("(Kotor sekali...)", "(Very dirty...)");
@@ -141,7 +142,34 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("(Buku belajar...)", "(Study book...)");
         kamusInggris.Add("(Baju Ayah...)", "(Dad's clothes...)");
         kamusInggris.Add("(Apa-apaan ini, aku akan membersihkannya besok)", "(What is this, I'll clean it tomorrow)");
-
+        kamusInggris.Add("(Lemari ku...)", "(My wardrobe...)");
+        kamusInggris.Add("(Kasurku...)", "(My bed...)");
+        kamusInggris.Add("(Laptopku)", "(My laptop)");
+        kamusInggris.Add("(Lampu tidur...)", "(Bedside lamp...)");
+        kamusInggris.Add("(Lemari orang tua...)", "(Parents' wardrobe...)");
+        kamusInggris.Add("(Kunci untuk membuka gudang...)", "(Key to open the warehouse...)");
+        kamusInggris.Add("(Foto apa ini?)", "(What photo is this?)");
+        kamusInggris.Add("(Kasur orang tuaku...)", "(My parents' bed...)");
+        kamusInggris.Add("(Tolet milik orang tuaku...)", "(My parents' dressing table...)");
+        kamusInggris.Add("(Siapa yang menulis catatan ini?)", "(Who wrote this note?)");
+        kamusInggris.Add("(Apa mungkin pintu kamar kakak ya hahaha...)", "(Could it be my sibling's bedroom door hahaha...)");
+        kamusInggris.Add("(Apakah aku harus mandi?)", "(Should I take a bath?)");
+        kamusInggris.Add("(Kurasa masih bisa digunakan)", "(I think it can still be used)");
+        kamusInggris.Add("(Aku akan membuangnya nanti...)", "(I'll throw it away later...)");
+        kamusInggris.Add("(Tajam...)", "(Sharp...)");
+        kamusInggris.Add("(Gunting...)", "(Scissors...)");
+        kamusInggris.Add("(Sudah berkarat...)", "(Already rusted...)");
+        kamusInggris.Add("(Piringnya bersih?)", "(Is the plate clean?)");
+        kamusInggris.Add("(Masih berfungsi?)", "(Still working?)");
+        kamusInggris.Add("(Ya tetangga pasti marah...)", "(Yeah, the neighbors will definitely be angry...)");
+        kamusInggris.Add("(Buku harian... Sepertinya sudah usang)", "(Diary... It seems worn out)");
+        kamusInggris.Add("(Siapa?)", "(Who?)");
+        kamusInggris.Add("(Kakak...)", "(Sibling...)");
+        kamusInggris.Add("Ini cara membebaskan kakak", "This is the way to free my sibling");
+        kamusInggris.Add("(Kasur kakak)", "(Sibling's bed)");
+        kamusInggris.Add("(Lemari kakak...)", "(Sibling's wardrobe...)");
+        kamusInggris.Add("(Kertas apa ini...)", "(What paper is this...)");
+        kamusInggris.Add("Sepertinya ini cara menyucikan keris kakek", "It seems this is the way to purify grandpa's keris");
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
     }
