@@ -63,7 +63,7 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Keris", "Keris");
         kamusInggris.Add("Topi", "Hat");
         kamusInggris.Add("Kalender", "Calendar");
-        kamusInggris.Add("Wajan", "frying pan");
+        kamusInggris.Add("Wajan", "Wok");
         kamusInggris.Add("Pisau", "Knife");
         kamusInggris.Add("Gunting", "Scissors");
         kamusInggris.Add("Kasur", "Bed");
@@ -175,23 +175,23 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("(Untuk membersihkan noda)", "(To clean the stain)");
 
         //Sompral
-        kamusInggris.Add("Pohonnya sudah mau tumbang, apa aku potong saja ya?", "The tree is about to fall, should I just cut it down?");
-        kamusInggris.Add("Rumah tua mah dijual aja", "An old house should just be sold");
-        kamusInggris.Add("Mereka pasti sudah menjadi hantu! hahaha", "They must have become ghosts! hahaha");
-        kamusInggris.Add("Kalo emang beneran ada hantu, pindahin kursinya dong!", "If there really is a ghost, move the chair!");
-        kamusInggris.Add("Munculah hantu, muncul lah", "Appear, ghost, appear");
-        kamusInggris.Add("Bayangin coba, kalau mereka tiba tiba muncul dibelakangku", "Just imagine if they suddenly appeared behind me");
-        kamusInggris.Add("Pasti ada penunggunya, coba muncul dong...", "There must be a guardian spirit, come on out...");
-        kamusInggris.Add("Ini pasti topi milik hantu! ini bukan milikku", "This must be a ghost's hat! This isn't mine");
-        kamusInggris.Add("Orang bunuh diri pakai ini!", "People commit suicide with this!");
-        kamusInggris.Add("Lucu ya, semisal lagi masak muncul hantu dijendela", "Funny, isn't it, if a ghost appears at the window while cooking");
-        kamusInggris.Add("Mana hantunya? biar aku getok pakai palu ini", "Where's the ghost? Let me hit it with this hammer");
-        kamusInggris.Add("Orang yang sudah meninggal di selimuti oleh ini...", "The deceased are covered in this...");
-        kamusInggris.Add("Bagaimana ya kalau ada hantu dibelakangku", "What if there is a ghost behind me");
-        kamusInggris.Add("Jika dia melompat-lompat, mirip seperti...", "If it hops around, it looks like...");
-        kamusInggris.Add("Kenapa ada banyak sekali foto gak jelas!", "Why are there so many unclear photos!");
-        kamusInggris.Add("Kakak memang suka mengada-ngada", "Sibling really likes to make things up");
-        kamusInggris.Add("Kasur kakak bau banget", "Sibling's bed smells so bad");
+        kamusInggris.Add("\"Pohonnya sudah mau tumbang, apa aku potong saja ya?\"", "\"The tree is about to fall, should I just cut it down?\"");
+        kamusInggris.Add("\"Rumah tua mah dijual aja\"", "\"An old house should just be sold\"");
+        kamusInggris.Add("\"Mereka pasti sudah menjadi hantu! hahaha\"", "\"They must have become ghosts! hahaha\"");
+        kamusInggris.Add("\"Kalo emang beneran ada hantu, pindahin kursinya dong!\"", "\"If there really is a ghost, move the chair!\"");
+        kamusInggris.Add("\"Munculah hantu, muncul lah\"", "\"Appear, ghost, appear\"");
+        kamusInggris.Add("\"Bayangin coba, kalau mereka tiba tiba muncul dibelakangku\"", "\"Just imagine if they suddenly appeared behind me\"");
+        kamusInggris.Add("\"Pasti ada penunggunya, coba muncul dong...\"", "\"There must be a guardian spirit, come on out...\"");
+        kamusInggris.Add("\"Ini pasti topi milik hantu! ini bukan milikku\"", "\"This must be a ghost's hat! This isn't mine\"");
+        kamusInggris.Add("\"Orang bunuh diri pakai ini!\"", "\"People commit suicide with this!\"");
+        kamusInggris.Add("\"Lucu ya, semisal lagi masak muncul hantu dijendela\"", "\"Funny, isn't it, if a ghost appears at the window while cooking\"");
+        kamusInggris.Add("\"Mana hantunya? biar aku getok pakai palu ini\"", "\"Where's the ghost? Let me hit it with this hammer\"");
+        kamusInggris.Add("\"Orang yang sudah meninggal di selimuti oleh ini...\"", "\"The deceased are covered in this...\"");
+        kamusInggris.Add("\"Bagaimana ya kalau ada hantu dibelakangku\"", "\"What if there is a ghost behind me\"");
+        kamusInggris.Add("\"Jika dia melompat-lompat, mirip seperti...\"", "\"If it hops around, it looks like...\"");
+        kamusInggris.Add("\"Kenapa ada banyak sekali foto gak jelas!\"", "\"Why are there so many unclear photos!\"");
+        kamusInggris.Add("\"Kakak memang suka mengada-ngada\"", "\"Sibling really likes to make things up\"");
+        kamusInggris.Add("\"Kasur kakak bau banget\"", "\"Sibling's bed smells so bad\"");
 
         //Riwayar Sompral
         kamusInggris.Add("- Pohon: Jangan buang air kecil sembarangan", "- Tree: Don't pee carelessly");
