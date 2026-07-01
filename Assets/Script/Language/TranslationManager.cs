@@ -191,6 +191,29 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Kenapa ada banyak sekali foto gak jelas!", "Why are there so many unclear photos!");
         kamusInggris.Add("Kakak memang suka mengada-ngada", "Sibling really likes to make things up");
         kamusInggris.Add("Kasur kakak bau banget", "Sibling's bed smells so bad");
+
+        //Riwayar Sompral
+        kamusInggris.Add("- Pohon: Jangan buang air kecil sembarangan", "- Tree: Don't pee carelessly");
+        kamusInggris.Add("- Pohon: Ada yang menjaga pohon tersebut", "- Tree: Someone is guarding the tree");
+        kamusInggris.Add("- Foto: Itu rumah keluargamu", "- Photo: That is your family's house");
+        kamusInggris.Add("- Foto Keluarga: Membicarakan seseorang yang sudah tidak ada itu tidak baik", "- Family Photo: It's not good to talk about someone who is gone");
+        kamusInggris.Add("- Silet: Membuang penjaga", "- Blade: Throwing away the guardian");
+        kamusInggris.Add("- Foto: Jangan menantang sesuatu yang telah tiada", "- Photo: Don't challenge something that is gone");
+        kamusInggris.Add("- Jendela: Jangan menyuruh mereka muncul di hadapanmu", "- Window: Don't ask them to appear before you");
+        kamusInggris.Add("- Kursi: Menyuruh makhluk lain seenaknya", "- Chair: Bossing around other beings");
+        kamusInggris.Add("- Keris: Menantang sang roh", "- Keris: Challenging the spirit");
+        kamusInggris.Add("- Topi: Hantu tidak memakai topi", "- Hat: Ghosts don't wear hats");
+        kamusInggris.Add("- Baju: Bagaimana jika iya?", "- Clothes: What if they do?");
+        kamusInggris.Add("- Pisau: Pemain menantang hantu untuk duduk di sofa.", "- Knife: Player challenges the ghost to sit on the sofa.");
+        kamusInggris.Add("- Gunting: Membuang pelindung", "- Scissors: Throwing away the protector");
+        kamusInggris.Add("- Wajan: Bagaimana jika mereka beneran muncul di jendela?", "- Wok: What if they really appear at the window?");
+        kamusInggris.Add("- Foto: Jangan sompral", "- Photo: Don't be disrespectful");
+        kamusInggris.Add("- Foto: Jangan menghina sesuatu", "- Photo: Don't insult something");
+        kamusInggris.Add("- Guling: Memanggilnya", "- Bolster: Calling them");
+        kamusInggris.Add("- Tolet: Jangan berandai pada sesuatu yang negatif", "- Dressing Table: Don't imagine negative things");
+        kamusInggris.Add("- Keran: Jangan mandi malam hari", "- Faucet: Don't take a bath at night");
+        kamusInggris.Add("- Palu: Mereka mungkin sedikit marah", "- Hammer: They might be a little angry");
+        kamusInggris.Add("- Kain kafan: Kamu sedikit menyinggung seseorang", "- Shroud: You slightly offended someone");
         
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
