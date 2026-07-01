@@ -12,7 +12,9 @@ public class MainMenuManager : MonoBehaviour
     public GameObject panelSettings;
     public GameObject panelDisclaimer;
     public GameObject panelUpdateInfo;
-    public GameObject panelCredits; // Variabel ini sudah kamu tambahkan sebelumnya
+    public GameObject panelCredits;
+    public GameObject panelKontrol;
+    public GameObject panelPilihBahasa;
 
     [Header("Daftar Panel Permainan")]
     public GameObject panelPilihEpisode;
@@ -49,7 +51,27 @@ public class MainMenuManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         InisialisasiSetting();
-        
+
+        // CEK MEMORI: Apakah pemain belum pernah memilih bahasa?
+        if (PlayerPrefs.GetInt("SudahPilihBahasa", 0) == 0)
+        {
+            TutupSemuaPanel();
+            if (panelPilihBahasa != null) panelPilihBahasa.SetActive(true);
+        }
+        else
+        {
+            // Jika sudah pernah, muat bahasa yang tersimpan dan lanjut ke game
+            if (TranslationManager.instance != null)
+            {
+                TranslationManager.instance.gunakanBahasaInggris = PlayerPrefs.GetInt("Set_Bahasa_Inggris", 0) == 1;
+            }
+            LanjutKeFlowAwal();
+        }
+    }
+
+    // Pindahkan logika asli Start() ke fungsi baru ini
+    private void LanjutKeFlowAwal()
+    {
         if (sesiPertamaKaliBuka)
         {
             sesiPertamaKaliBuka = false;
@@ -115,6 +137,13 @@ public class MainMenuManager : MonoBehaviour
     {
         TutupSemuaPanel();
         if (panelCredits != null) panelCredits.SetActive(true);
+        GantiBGM(bgmUtama);
+    }
+
+    public void BukaKontrol()
+    {
+        TutupSemuaPanel();
+        if (panelKontrol != null) panelKontrol.SetActive(true);
         GantiBGM(bgmUtama);
     }
 
@@ -281,15 +310,39 @@ public class MainMenuManager : MonoBehaviour
         if (panelHasilEnding != null) panelHasilEnding.SetActive(false);
         if (introPanel != null) introPanel.SetActive(false);
         if (panelLoading != null) panelLoading.SetActive(false);
-        
-        // =======================================================
-        // TAMBAHAN: Matikan panel Credits agar tidak bertumpuk
-        // =======================================================
+        if (panelKontrol != null) panelKontrol.SetActive(false);
         if (panelCredits != null) panelCredits.SetActive(false);
+        if (panelPilihBahasa != null) panelPilihBahasa.SetActive(false);
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    public void GantiBahasaIndonesia()
+    {
+        SimpanBahasaLaluReload(false);
+    }
+
+    public void GantiBahasaInggris()
+    {
+        SimpanBahasaLaluReload(true);
+    }
+
+    private void SimpanBahasaLaluReload(bool isInggris)
+    {
+        if (TranslationManager.instance != null)
+        {
+            TranslationManager.instance.gunakanBahasaInggris = isInggris;
+        }
+        
+        // Simpan pilihan ke memori permanen
+        PlayerPrefs.SetInt("Set_Bahasa_Inggris", isInggris ? 1 : 0);
+        PlayerPrefs.SetInt("SudahPilihBahasa", 1); // Mengunci agar panel awal tidak muncul lagi
+        PlayerPrefs.Save();
+
+        // Memuat ulang (Reload) scene agar seluruh teks UI langsung berubah bahasanya secara instan
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
