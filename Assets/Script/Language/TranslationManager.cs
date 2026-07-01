@@ -57,13 +57,13 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Piring", "Plate");
         kamusInggris.Add("Apel", "Apple");
         kamusInggris.Add("Foto", "Photo");
-        kamusInggris.Add("Foto keluarga", "Family Photo");
+        kamusInggris.Add("Foto Keluarga", "Family Photo");
         kamusInggris.Add("Saklar", "Switch");
         kamusInggris.Add("Kunci gerbang", "Gate Key");
         kamusInggris.Add("Keris", "Keris");
         kamusInggris.Add("Topi", "Hat");
         kamusInggris.Add("Kalender", "Calendar");
-        kamusInggris.Add("Wajan", "Wok");
+        kamusInggris.Add("Wajan", "frying pan");
         kamusInggris.Add("Pisau", "Knife");
         kamusInggris.Add("Gunting", "Scissors");
         kamusInggris.Add("Kasur", "Bed");
@@ -109,6 +109,7 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Denah rumah", "House Plan");
         kamusInggris.Add("Nomer Rumah", "House Number");
         kamusInggris.Add("Baca", "Read");
+        kamusInggris.Add("Pintu", "Door");
 
         // === KOMENTAR ===
         kamusInggris.Add("(Kotor sekali...)", "(Very dirty...)");
@@ -191,7 +192,22 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("\"Kenapa ada banyak sekali foto gak jelas!\"", "\"Why are there so many unclear photos!\"");
         kamusInggris.Add("\"Kakak memang suka mengada-ngada\"", "\"Sibling really likes to make things up\"");
         kamusInggris.Add("\"Kasur kakak bau banget\"", "\"Sibling's bed smells so bad\"");
-        
+        kamusInggris.Add("\"Terlihat seperti orang dari jauh\"", "\"looks like a person from a distance\"");
+
+        //UI Main menu
+        kamusInggris.Add("Jawa, Indonesia\n\nArya membutuhkan uang untuk biaya operasi istrinya. Dia berencana menjual rumah lama keluarganya.\n\nTapi, Rumah lama itu menyimpan hal lain yang masih misteri.","Java, Indonesia\n\nArya needs money for his wife's surgery. He plans to sell his old family house.\n\nBut, that old house holds another mystery.");
+        kamusInggris.Add("MULAI", "START");
+        kamusInggris.Add("SETELAN", "SETTINGS");
+        kamusInggris.Add("KELUAR", "QUIT");
+        kamusInggris.Add("Lanjutkan", "Continue");
+        kamusInggris.Add("Paham", "Understood");
+        kamusInggris.Add("Mengerti", "Understand");
+        kamusInggris.Add("Kembali", "Back");
+        kamusInggris.Add("Buka Dokumen", "Open Document");
+        kamusInggris.Add("Hasil Dokumen", "Document Result");
+        kamusInggris.Add("DISCLAIMER\n\nGame ini adalah fan game yang terinspirasi dari Pamali. Game ini tidak berafiliasi dengan pengembang resminya. Seluruh hak atas merek dan aset asli tetap menjadi milik pemiliknya. Sebagian tekstur dalam game ini dibuat dengan bantuan AI dan telah disesuaikan untuk kebutuhan pengembangan.","DISCLAIMER\n\nThis game is a fan game inspired by Pamali. This game is not affiliated with the official developer. All rights to the brand and original assets remain the property of their respective owners. Some textures in this game were created with the help of AI and have been adjusted for development needs.");
+        kamusInggris.Add("WARNING\n\nGame ini mengandung jumpscare, suara keras, cahaya berkedip, dan konten horor yang dapat mengganggu sebagian pemain. Game ini mungkin tidak cocok bagi pemain yang sensitif terhadap cahaya berkedip, suara keras, atau adegan menakutkan, dan pemain yang memiliki riwayat epilepsi fotosensitif disarankan untuk berhati-hati. Harap bermain dengan bijak.","WARNING\n\nThis game contains jumpscares, loud noises, flashing lights, and horror content that may disturb some players. This game may not be suitable for players who are sensitive to flashing lights, loud noises, or scary scenes, and players with a history of photosensitive epilepsy are advised to be cautious. Please play responsibly.");
+
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
     }

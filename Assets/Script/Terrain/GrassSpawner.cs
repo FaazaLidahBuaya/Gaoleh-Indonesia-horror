@@ -68,8 +68,8 @@ public class GrassSpawner : MonoBehaviour
 
     void Start()
     {
-        mainCamera = Camera.main;
-        if (mainCamera == null) mainCamera = FindObjectOfType<Camera>();
+    mainCamera = Camera.main;
+    if (mainCamera == null) mainCamera = FindAnyObjectByType<Camera>();
     }
 
     void Update()
