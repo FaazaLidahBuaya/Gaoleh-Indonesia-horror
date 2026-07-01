@@ -174,6 +174,26 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("(Serem banget rasanya...)", "(It feels so creepy...)");
         kamusInggris.Add("(Untuk membersihkan noda)", "(To clean the stain)");
 
+        //UI Main menu
+        kamusInggris.Add("Jawa, Indonesia\n\nArya membutuhkan uang untuk biaya operasi istrinya. Dia berencana menjual rumah lama keluarganya.\n\nTapi, Rumah lama itu menyimpan hal lain yang masih misteri.","Java, Indonesia\n\nArya needs money for his wife's surgery. He plans to sell his old family house.\n\nBut, that old house holds another mystery.");
+        kamusInggris.Add("MULAI", "START");
+        kamusInggris.Add("SETELAN", "SETTINGS");
+        kamusInggris.Add("KELUAR", "QUIT");
+        kamusInggris.Add("Lanjutkan", "Continue");
+        kamusInggris.Add("Paham", "Understood");
+        kamusInggris.Add("Mengerti", "Understand");
+        kamusInggris.Add("Kembali", "Back");
+        kamusInggris.Add("Buka Dokumen", "Open Document");
+        kamusInggris.Add("Hasil Dokumen", "Document Result");
+        kamusInggris.Add("KONTROL", "CONTROL");
+        // === UI TUTORIAL KONTROL ===
+
+        kamusInggris.Add("Kamu bisa berbicara buruk mengenai object (Hanya beberapa), Klik kanan dan pilih dialog. PENTING, klik pada bagian tengah tombol dialog. Dan kamu akan mulai berbicara. Ambil konsekuensimu sendiri!", "You can speak ill of an object (only some). Right-click and select dialogue. IMPORTANT: click on the center of the dialogue button, and you will start speaking. Face your own consequences!");
+        kamusInggris.Add("Kamu bisa melakukan berbagai interaksi pada object. Periksa untuk memeriksa object. Komentar untuk membicarakan barang tersebut. Dan interaksi(Pada barang tertentu), tombol ini bisa punya 2 interaksi.", "You can interact with objects in various ways. 'Inspect' to examine the object. 'Comment' to talk about it. And 'Interact' (for specific items); this button can have 2 different interactions.");
+        kamusInggris.Add("Saat memeriksa suatu object, kamu bisa menekan Klik kanan untuk merotate object. Kamu juga bisa Zoom In/Out Object tersebut dengan Mouse Wheel", "While examining an object, you can hold Right-click to rotate it. You can also Zoom In/Out on the object using the Mouse Wheel.");
+        kamusInggris.Add("DISCLAIMER\n\nGame ini adalah fan game yang terinspirasi dari Pamali. Game ini tidak berafiliasi dengan pengembang resminya. Seluruh hak atas merek dan aset asli tetap menjadi milik pemiliknya. Sebagian tekstur dalam game ini dibuat dengan bantuan AI dan telah disesuaikan untuk kebutuhan pengembangan.","DISCLAIMER\n\nThis game is a fan game inspired by Pamali. This game is not affiliated with the official developer. All rights to the brand and original assets remain the property of their respective owners. Some textures in this game were created with the help of AI and have been adjusted for development needs.");
+        kamusInggris.Add("WARNING\n\nGame ini mengandung jumpscare, suara keras, cahaya berkedip, dan konten horor yang dapat mengganggu sebagian pemain. Game ini mungkin tidak cocok bagi pemain yang sensitif terhadap cahaya berkedip, suara keras, atau adegan menakutkan, dan pemain yang memiliki riwayat epilepsi fotosensitif disarankan untuk berhati-hati. Harap bermain dengan bijak.","WARNING\n\nThis game contains jumpscares, loud noises, flashing lights, and horror content that may disturb some players. This game may not be suitable for players who are sensitive to flashing lights, loud noises, or scary scenes, and players with a history of photosensitive epilepsy are advised to be cautious. Please play responsibly.");
+
         //Sompral
         kamusInggris.Add("\"Pohonnya sudah mau tumbang, apa aku potong saja ya?\"", "\"The tree is about to fall, should I just cut it down?\"");
         kamusInggris.Add("\"Rumah tua mah dijual aja\"", "\"An old house should just be sold\"");
@@ -215,6 +235,16 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("- Keran: Jangan mandi malam hari", "- Faucet: Don't take a bath at night");
         kamusInggris.Add("- Palu: Mereka mungkin sedikit marah", "- Hammer: They might be a little angry");
         kamusInggris.Add("- Kain kafan: Kamu sedikit menyinggung seseorang", "- Shroud: You slightly offended someone");
+
+        //Ending
+        kamusInggris.Add("Laporan Sompral", "Sompral Report");
+        kamusInggris.Add("Riwayat Sompral:", "Sompral History:");
+        kamusInggris.Add("Ending 1: Melarikan Diri", "");
+        kamusInggris.Add("Arya memutuskan untuk pergi tanpa pikir panjang dari rumah tersebut, ia merasa menjual rumah keluarganya adalah hal yang buruk. Arya pun memutuskan untuk mencari uang dengan cara lain. Terlepas dari misteri rumah lama yang sudah ditinggalkan tersebut.", "");
+        kamusInggris.Add("Ending 2: Terjual Begitu Murah", "");
+        kamusInggris.Add("Arya menemukan orang untuk menjual rumah tersebut, tetapi.. karena ia tidak membawa beberapa dokumen terkait rumah itu. Rumah tersebut dihargai begitu murah. Meski begitu, uang tersebut masih dapat digunakan untuk mengobati istrinya yang sedang sakit.", "");
+        kamusInggris.Add("Ending 12: Polisi", "dawkodak");
+        kamusInggris.Add("Arya menelepon polisi dan mengatakan bahwa dia melihat pocong, tetapi polisi mengira Arya berbohong dan langsung menutup telepon. ", "awkdaow");
         
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");

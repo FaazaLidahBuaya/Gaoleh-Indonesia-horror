@@ -928,6 +928,7 @@ GameObject:
   - component: {fileID: 18508669}
   - component: {fileID: 18508671}
   - component: {fileID: 18508670}
+  - component: {fileID: 18508672}
   m_Layer: 5
   m_Name: TextJudul
   m_TagString: Untagged
@@ -1054,6 +1055,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18508668}
   m_CullTransparentMesh: 1
+--- !u!114 &18508672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18508668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1001 &23452224
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21527,6 +21540,7 @@ GameObject:
   - component: {fileID: 491706816}
   - component: {fileID: 491706818}
   - component: {fileID: 491706817}
+  - component: {fileID: 491706819}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -21653,6 +21667,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491706815}
   m_CullTransparentMesh: 1
+--- !u!114 &491706819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491706815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1001 &495431847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63851,6 +63877,7 @@ GameObject:
   - component: {fileID: 1448268093}
   - component: {fileID: 1448268095}
   - component: {fileID: 1448268094}
+  - component: {fileID: 1448268096}
   m_Layer: 5
   m_Name: TextLaporanSompral
   m_TagString: Untagged
@@ -63977,6 +64004,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1448268092}
   m_CullTransparentMesh: 1
+--- !u!114 &1448268096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448268092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1 &1451293740
 GameObject:
   m_ObjectHideFlags: 0
@@ -76232,6 +76271,7 @@ GameObject:
   - component: {fileID: 1791417532}
   - component: {fileID: 1791417533}
   - component: {fileID: 1791417534}
+  - component: {fileID: 1791417535}
   m_Layer: 5
   m_Name: TextJudul
   m_TagString: Untagged
@@ -76358,6 +76398,18 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &1791417535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791417531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1001 &1791921151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81329,6 +81381,7 @@ GameObject:
   - component: {fileID: 1915551534}
   - component: {fileID: 1915551536}
   - component: {fileID: 1915551535}
+  - component: {fileID: 1915551537}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -81375,9 +81428,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lanjutkan
-
-'
+  m_text: Lanjutkan
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -81457,6 +81508,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915551533}
   m_CullTransparentMesh: 1
+--- !u!114 &1915551537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915551533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!4 &1916064053 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f123309fa21e33648aa4b950c87c3c41, type: 3}
@@ -83089,6 +83152,7 @@ GameObject:
   - component: {fileID: 1949315569}
   - component: {fileID: 1949315568}
   - component: {fileID: 1949315567}
+  - component: {fileID: 1949315570}
   m_Layer: 5
   m_Name: TextNarasi
   m_TagString: Untagged
@@ -83215,6 +83279,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -89}
   m_SizeDelta: {x: 1500, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1949315570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949315566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1 &1951269964 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 970354b9904690149b02dca3a2c9aa75, type: 3}
