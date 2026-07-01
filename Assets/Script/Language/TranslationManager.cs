@@ -175,6 +175,7 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("(Untuk membersihkan noda)", "(To clean the stain)");
 
         //Sompral
+<<<<<<< HEAD
         kamusInggris.Add("\"Pohonnya sudah mau tumbang, apa aku potong saja ya?\"", "\"The tree is about to fall, should I just cut it down?\"");
         kamusInggris.Add("\"Rumah tua mah dijual aja\"", "\"An old house should just be sold\"");
         kamusInggris.Add("\"Mereka pasti sudah menjadi hantu! hahaha\"", "\"They must have become ghosts! hahaha\"");
@@ -214,6 +215,49 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("DISCLAIMER\n\nGame ini adalah fan game yang terinspirasi dari Pamali. Game ini tidak berafiliasi dengan pengembang resminya. Seluruh hak atas merek dan aset asli tetap menjadi milik pemiliknya. Sebagian tekstur dalam game ini dibuat dengan bantuan AI dan telah disesuaikan untuk kebutuhan pengembangan.","DISCLAIMER\n\nThis game is a fan game inspired by Pamali. This game is not affiliated with the official developer. All rights to the brand and original assets remain the property of their respective owners. Some textures in this game were created with the help of AI and have been adjusted for development needs.");
         kamusInggris.Add("WARNING\n\nGame ini mengandung jumpscare, suara keras, cahaya berkedip, dan konten horor yang dapat mengganggu sebagian pemain. Game ini mungkin tidak cocok bagi pemain yang sensitif terhadap cahaya berkedip, suara keras, atau adegan menakutkan, dan pemain yang memiliki riwayat epilepsi fotosensitif disarankan untuk berhati-hati. Harap bermain dengan bijak.","WARNING\n\nThis game contains jumpscares, loud noises, flashing lights, and horror content that may disturb some players. This game may not be suitable for players who are sensitive to flashing lights, loud noises, or scary scenes, and players with a history of photosensitive epilepsy are advised to be cautious. Please play responsibly.");
 
+=======
+        kamusInggris.Add("Pohonnya sudah mau tumbang, apa aku potong saja ya?", "The tree is about to fall, should I just cut it down?");
+        kamusInggris.Add("Rumah tua mah dijual aja", "An old house should just be sold");
+        kamusInggris.Add("Mereka pasti sudah menjadi hantu! hahaha", "They must have become ghosts! hahaha");
+        kamusInggris.Add("Kalo emang beneran ada hantu, pindahin kursinya dong!", "If there really is a ghost, move the chair!");
+        kamusInggris.Add("Munculah hantu, muncul lah", "Appear, ghost, appear");
+        kamusInggris.Add("Bayangin coba, kalau mereka tiba tiba muncul dibelakangku", "Just imagine if they suddenly appeared behind me");
+        kamusInggris.Add("Pasti ada penunggunya, coba muncul dong...", "There must be a guardian spirit, come on out...");
+        kamusInggris.Add("Ini pasti topi milik hantu! ini bukan milikku", "This must be a ghost's hat! This isn't mine");
+        kamusInggris.Add("Orang bunuh diri pakai ini!", "People commit suicide with this!");
+        kamusInggris.Add("Lucu ya, semisal lagi masak muncul hantu dijendela", "Funny, isn't it, if a ghost appears at the window while cooking");
+        kamusInggris.Add("Mana hantunya? biar aku getok pakai palu ini", "Where's the ghost? Let me hit it with this hammer");
+        kamusInggris.Add("Orang yang sudah meninggal di selimuti oleh ini...", "The deceased are covered in this...");
+        kamusInggris.Add("Bagaimana ya kalau ada hantu dibelakangku", "What if there is a ghost behind me");
+        kamusInggris.Add("Jika dia melompat-lompat, mirip seperti...", "If it hops around, it looks like...");
+        kamusInggris.Add("Kenapa ada banyak sekali foto gak jelas!", "Why are there so many unclear photos!");
+        kamusInggris.Add("Kakak memang suka mengada-ngada", "Sibling really likes to make things up");
+        kamusInggris.Add("Kasur kakak bau banget", "Sibling's bed smells so bad");
+
+        //Riwayar Sompral
+        kamusInggris.Add("- Pohon: Jangan buang air kecil sembarangan", "- Tree: Don't pee carelessly");
+        kamusInggris.Add("- Pohon: Ada yang menjaga pohon tersebut", "- Tree: Someone is guarding the tree");
+        kamusInggris.Add("- Foto: Itu rumah keluargamu", "- Photo: That is your family's house");
+        kamusInggris.Add("- Foto Keluarga: Membicarakan seseorang yang sudah tidak ada itu tidak baik", "- Family Photo: It's not good to talk about someone who is gone");
+        kamusInggris.Add("- Silet: Membuang penjaga", "- Blade: Throwing away the guardian");
+        kamusInggris.Add("- Foto: Jangan menantang sesuatu yang telah tiada", "- Photo: Don't challenge something that is gone");
+        kamusInggris.Add("- Jendela: Jangan menyuruh mereka muncul di hadapanmu", "- Window: Don't ask them to appear before you");
+        kamusInggris.Add("- Kursi: Menyuruh makhluk lain seenaknya", "- Chair: Bossing around other beings");
+        kamusInggris.Add("- Keris: Menantang sang roh", "- Keris: Challenging the spirit");
+        kamusInggris.Add("- Topi: Hantu tidak memakai topi", "- Hat: Ghosts don't wear hats");
+        kamusInggris.Add("- Baju: Bagaimana jika iya?", "- Clothes: What if they do?");
+        kamusInggris.Add("- Pisau: Pemain menantang hantu untuk duduk di sofa.", "- Knife: Player challenges the ghost to sit on the sofa.");
+        kamusInggris.Add("- Gunting: Membuang pelindung", "- Scissors: Throwing away the protector");
+        kamusInggris.Add("- Wajan: Bagaimana jika mereka beneran muncul di jendela?", "- Wok: What if they really appear at the window?");
+        kamusInggris.Add("- Foto: Jangan sompral", "- Photo: Don't be disrespectful");
+        kamusInggris.Add("- Foto: Jangan menghina sesuatu", "- Photo: Don't insult something");
+        kamusInggris.Add("- Guling: Memanggilnya", "- Bolster: Calling them");
+        kamusInggris.Add("- Tolet: Jangan berandai pada sesuatu yang negatif", "- Dressing Table: Don't imagine negative things");
+        kamusInggris.Add("- Keran: Jangan mandi malam hari", "- Faucet: Don't take a bath at night");
+        kamusInggris.Add("- Palu: Mereka mungkin sedikit marah", "- Hammer: They might be a little angry");
+        kamusInggris.Add("- Kain kafan: Kamu sedikit menyinggung seseorang", "- Shroud: You slightly offended someone");
+        
+>>>>>>> 6045af7bcb4230d8e3ad8890692b0e4a535c9664
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
     }
