@@ -175,47 +175,6 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("(Untuk membersihkan noda)", "(To clean the stain)");
 
         //Sompral
-<<<<<<< HEAD
-        kamusInggris.Add("\"Pohonnya sudah mau tumbang, apa aku potong saja ya?\"", "\"The tree is about to fall, should I just cut it down?\"");
-        kamusInggris.Add("\"Rumah tua mah dijual aja\"", "\"An old house should just be sold\"");
-        kamusInggris.Add("\"Mereka pasti sudah menjadi hantu! hahaha\"", "\"They must have become ghosts! hahaha\"");
-        kamusInggris.Add("\"Kalo emang beneran ada hantu, pindahin kursinya dong!\"", "\"If there really is a ghost, move the chair!\"");
-        kamusInggris.Add("\"Munculah hantu, muncul lah\"", "\"Appear, ghost, appear\"");
-        kamusInggris.Add("\"Bayangin coba, kalau mereka tiba tiba muncul dibelakangku\"", "\"Just imagine if they suddenly appeared behind me\"");
-        kamusInggris.Add("\"Pasti ada penunggunya, coba muncul dong...\"", "\"There must be a guardian spirit, come on out...\"");
-        kamusInggris.Add("\"Ini pasti topi milik hantu! ini bukan milikku\"", "\"This must be a ghost's hat! This isn't mine\"");
-        kamusInggris.Add("\"Orang bunuh diri pakai ini!\"", "\"People commit suicide with this!\"");
-        kamusInggris.Add("\"Lucu ya, semisal lagi masak muncul hantu dijendela\"", "\"Funny, isn't it, if a ghost appears at the window while cooking\"");
-        kamusInggris.Add("\"Mana hantunya? biar aku getok pakai palu ini\"", "\"Where's the ghost? Let me hit it with this hammer\"");
-        kamusInggris.Add("\"Orang yang sudah meninggal di selimuti oleh ini...\"", "\"The deceased are covered in this...\"");
-        kamusInggris.Add("\"Bagaimana ya kalau ada hantu dibelakangku\"", "\"What if there is a ghost behind me\"");
-        kamusInggris.Add("\"Jika dia melompat-lompat, mirip seperti...\"", "\"If it hops around, it looks like...\"");
-        kamusInggris.Add("\"Kenapa ada banyak sekali foto gak jelas!\"", "\"Why are there so many unclear photos!\"");
-        kamusInggris.Add("\"Kakak memang suka mengada-ngada\"", "\"Sibling really likes to make things up\"");
-        kamusInggris.Add("\"Kasur kakak bau banget\"", "\"Sibling's bed smells so bad\"");
-        kamusInggris.Add("\"Terlihat seperti orang dari jauh\"", "\"looks like a person from a distance\"");
-
-        //UI Main menu
-        kamusInggris.Add("Jawa, Indonesia\n\nArya membutuhkan uang untuk biaya operasi istrinya. Dia berencana menjual rumah lama keluarganya.\n\nTapi, Rumah lama itu menyimpan hal lain yang masih misteri.","Java, Indonesia\n\nArya needs money for his wife's surgery. He plans to sell his old family house.\n\nBut, that old house holds another mystery.");
-        kamusInggris.Add("MULAI", "START");
-        kamusInggris.Add("SETELAN", "SETTINGS");
-        kamusInggris.Add("KELUAR", "QUIT");
-        kamusInggris.Add("Lanjutkan", "Continue");
-        kamusInggris.Add("Paham", "Understood");
-        kamusInggris.Add("Mengerti", "Understand");
-        kamusInggris.Add("Kembali", "Back");
-        kamusInggris.Add("Buka Dokumen", "Open Document");
-        kamusInggris.Add("Hasil Dokumen", "Document Result");
-        kamusInggris.Add("KONTROL", "CONTROL");
-        // === UI TUTORIAL KONTROL ===
-
-        kamusInggris.Add("Kamu bisa berbicara buruk mengenai object (Hanya beberapa), Klik kanan dan pilih dialog. PENTING, klik pada bagian tengah tombol dialog. Dan kamu akan mulai berbicara. Ambil konsekuensimu sendiri!", "You can speak ill of an object (only some). Right-click and select dialogue. IMPORTANT: click on the center of the dialogue button, and you will start speaking. Face your own consequences!");
-        kamusInggris.Add("Kamu bisa melakukan berbagai interaksi pada object. Periksa untuk memeriksa object. Komentar untuk membicarakan barang tersebut. Dan interaksi(Pada barang tertentu), tombol ini bisa punya 2 interaksi.", "You can interact with objects in various ways. 'Inspect' to examine the object. 'Comment' to talk about it. And 'Interact' (for specific items); this button can have 2 different interactions.");
-        kamusInggris.Add("Saat memeriksa suatu object, kamu bisa menekan Klik kanan untuk merotate object. Kamu juga bisa Zoom In/Out Object tersebut dengan Mouse Wheel", "While examining an object, you can hold Right-click to rotate it. You can also Zoom In/Out on the object using the Mouse Wheel.");
-        kamusInggris.Add("DISCLAIMER\n\nGame ini adalah fan game yang terinspirasi dari Pamali. Game ini tidak berafiliasi dengan pengembang resminya. Seluruh hak atas merek dan aset asli tetap menjadi milik pemiliknya. Sebagian tekstur dalam game ini dibuat dengan bantuan AI dan telah disesuaikan untuk kebutuhan pengembangan.","DISCLAIMER\n\nThis game is a fan game inspired by Pamali. This game is not affiliated with the official developer. All rights to the brand and original assets remain the property of their respective owners. Some textures in this game were created with the help of AI and have been adjusted for development needs.");
-        kamusInggris.Add("WARNING\n\nGame ini mengandung jumpscare, suara keras, cahaya berkedip, dan konten horor yang dapat mengganggu sebagian pemain. Game ini mungkin tidak cocok bagi pemain yang sensitif terhadap cahaya berkedip, suara keras, atau adegan menakutkan, dan pemain yang memiliki riwayat epilepsi fotosensitif disarankan untuk berhati-hati. Harap bermain dengan bijak.","WARNING\n\nThis game contains jumpscares, loud noises, flashing lights, and horror content that may disturb some players. This game may not be suitable for players who are sensitive to flashing lights, loud noises, or scary scenes, and players with a history of photosensitive epilepsy are advised to be cautious. Please play responsibly.");
-
-=======
         kamusInggris.Add("Pohonnya sudah mau tumbang, apa aku potong saja ya?", "The tree is about to fall, should I just cut it down?");
         kamusInggris.Add("Rumah tua mah dijual aja", "An old house should just be sold");
         kamusInggris.Add("Mereka pasti sudah menjadi hantu! hahaha", "They must have become ghosts! hahaha");
@@ -257,7 +216,6 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("- Palu: Mereka mungkin sedikit marah", "- Hammer: They might be a little angry");
         kamusInggris.Add("- Kain kafan: Kamu sedikit menyinggung seseorang", "- Shroud: You slightly offended someone");
         
->>>>>>> 6045af7bcb4230d8e3ad8890692b0e4a535c9664
         // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
         // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
     }
