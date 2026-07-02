@@ -4496,8 +4496,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EndingTrigger
   idEnding: 12
   judulEnding: 'Ending 12: Polisi'
-  narasiEnding: 'Arya menelepon polisi dan mengatakan bahwa dia melihat pocong, tetapi
-    polisi mengira Arya berbohong dan langsung menutup telepon. '
+  narasiEnding: Arya menelepon polisi dan mengatakan bahwa dia melihat pocong, tetapi
+    polisi mengira Arya berbohong dan langsung menutup telepon.
   sfxEnding: {fileID: 8300000, guid: 425c218e925d62d40b21d33470dcbfc4, type: 3}
   gunakanFade: 1
 --- !u!1001 &93474203
@@ -10988,7 +10988,6 @@ GameObject:
   - component: {fileID: 237241367}
   - component: {fileID: 237241369}
   - component: {fileID: 237241368}
-  - component: {fileID: 237241370}
   m_Layer: 0
   m_Name: PanelTombolDinamis
   m_TagString: Untagged
@@ -11055,18 +11054,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &237241370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 237241366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1001 &238847767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15507,7 +15494,7 @@ Transform:
   m_GameObject: {fileID: 353447539}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.97256804, z: -0, w: -0.23261863}
-  m_LocalPosition: {x: -7.989, y: 1.328, z: -3.549}
+  m_LocalPosition: {x: -7.989, y: 1.328, z: 9.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

@@ -110,8 +110,6 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Nomer Rumah", "House Number");
         kamusInggris.Add("Baca", "Read");
         kamusInggris.Add("Pintu", "Door");
-        kamusInggris.Add("Buku harian kakak", "Brother's Diary");
-        kamusInggris.Add("Gemboknya masih terkunci. Aku butuh kuncinya.", "The padlock is still locked. I need the key.");
 
         // === KOMENTAR ===
         kamusInggris.Add("(Kotor sekali...)", "(Very dirty...)");
@@ -261,8 +259,51 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("- Keran: Jangan mandi malam hari", "- Faucet: Don't take a bath at night");
         kamusInggris.Add("- Palu: Mereka mungkin sedikit marah", "- Hammer: They might be a little angry");
         kamusInggris.Add("- Kain kafan: Kamu sedikit menyinggung seseorang", "- Shroud: You slightly offended someone");
-        kamusInggris.Add("- Buku harian kakak: Kamu membuatnya marah besar!", "- Brother's Diary: You've already made him angry!");
 
+        //Ending
+        kamusInggris.Add("Laporan Sompral", "Sompral Report");
+        kamusInggris.Add("Riwayat Sompral:", "Sompral History:");
+        kamusInggris.Add("Ending 1: Melarikan Diri", "Ending 1: Running Away");
+        kamusInggris.Add("Arya memutuskan untuk pergi tanpa pikir panjang dari rumah tersebut, ia merasa menjual rumah keluarganya adalah hal yang buruk. Arya pun memutuskan untuk mencari uang dengan cara lain. Terlepas dari misteri rumah lama yang sudah ditinggalkan tersebut.", "Arya decided to leave the house without a second thought; he felt that selling his family's home was a bad idea. Arya then decided to find money in another way, regardless of the mystery of the abandoned old house.");
+        kamusInggris.Add("Ending 2: Terjual Begitu Murah", "Ending 2: Sold So Cheaply");
+        kamusInggris.Add("Arya menemukan orang untuk menjual rumah tersebut, tetapi.. karena ia tidak membawa beberapa dokumen terkait rumah itu. Rumah tersebut dihargai begitu murah. Meski begitu, uang tersebut masih dapat digunakan untuk mengobati istrinya yang sedang sakit.", "Arya found someone to sell the house to, but... because he didn't bring some documents related to the house, it was valued very cheaply. Even so, the money could still be used to treat his sick wife.");
+        kamusInggris.Add("Ending 3: Berhasil Terjual", "Ending 3: Successfully Sold");
+        kamusInggris.Add("Arya berhasil menjual rumah lama itu dengan harga yang cukup mahal, memang sangat menyakitkan. Melihat rumah lamanya terjual dan dihuni oleh keluarga berikutnya, tetapi ia harus melupakan masalalunya itu dan fokus dengan apa yang sedang dihadapinya.", "Arya successfully sold the old house at a fairly high price. It was indeed very painful seeing his old house sold and occupied by the next family, but he had to forget his past and focus on what he was currently facing.");
+        kamusInggris.Add("Ending 4: Menjual pusaka", "Ending 4: Selling the Heirloom");
+        kamusInggris.Add("Arya melakukan metode yang tepat untuk membersihkan keris tersebut. Tetapi Arya memutuskan untuk menjual keris tersebut. Tidak disangka-sangka, harga keris tersebut ternyata lebih mahal dari rumahnya dan Arya pun mendapatkan uang yang begitu banyak.", "Arya performed the right method to cleanse the keris. However, Arya decided to sell it. Unexpectedly, the price of the keris turned out to be higher than his house, and Arya received a lot of money.");
+        kamusInggris.Add("Ending 5: Pemilik pusaka", "Ending 5: The Heirloom Owner");
+        kamusInggris.Add("Arya melakukan ritual penyucian pada keris tersebut, ia melakukan metode yang tepat. Roh yang ada di keris tersebut mengakui bahwa arya adalah pemilik barunya dan akan memberikan berbagai keuntungan bagi Arya kedepannya.", "Arya performed a purification ritual on the keris using the correct method. The spirit inside the keris acknowledged that Arya is its new owner and will provide various benefits for him in the future.");
+        kamusInggris.Add("Ending 6: Diikuti oleh ketidakberuntungan", "Ending 6: Followed by Bad Luck");
+        kamusInggris.Add("Arya mencoba membawa kabur keris peninggalan kakeknya, tetapi ia tidak memahami prosedur untuk membersihkan keris tersebut. Arya sering mendapat masalah semenjak mengambil keris tersebut. Setiap kali Arya membuang keris tersebut, dia kembali kepada Arya. Arya sudah membuat roh keris itu marah.", "Arya tried to run away with his grandfather's heirloom keris, but he didn't understand the procedure to cleanse it. Arya often encountered problems since taking the keris. Every time Arya threw it away, it returned to him. Arya had made the keris spirit angry.");
+        kamusInggris.Add("Ending 7: Terjual dengan sempurna", "Ending 7: Sold Perfectly");
+        kamusInggris.Add("Arya berhasil menemukan semua dokumen yang dibutuhkan serta membersihkan rumah tersebut. Dia berhasil menjual rumah tersebut dengan harga tinggi. Meskipun ada misteri yang masih tertinggal...", "Arya successfully found all the required documents and cleaned the house. He managed to sell the house at a high price. Although there is a mystery that still remains...");
+        kamusInggris.Add("Ending 8: Pembuat masalah", "Ending 8: Troublemaker");
+        kamusInggris.Add("Arya membuat keributan didalam rumah itu. Sehingga sosok yang menemaninya didalam sana menjadi marah. Sejak saat itu arya sering melihat sosok menyeramkan menyerupai guling yang mengikutinya kemana saja.", "Arya caused a commotion inside the house, so the figure accompanying him in there became angry. Since then, Arya often saw a terrifying figure resembling a bolster following him everywhere.");
+        kamusInggris.Add("Ending 9: Merawat dengan baik", "Ending 9: Taking Good Care");
+        kamusInggris.Add("Arya pergi kerumah lamanya hanya untuk membersihkan rumah tersebut. memang, ia sedang membutuhkan uang hasil menjual rumah. tapi, setidaknya makhluk yang ada disana bisa lebih senang kan?", "Arya went to his old house just to clean it. Indeed, he was in need of money from selling the house. But, at least the beings there can be happier, right?");
+        kamusInggris.Add("Ending 10: Gagal terjual", "Ending 10: Failed to Sell");
+        kamusInggris.Add("Rumah siap dijual, tapi konsekuensi atas hal yang telah dia perbuat karena telah membuat keributan di dalam rumah tersebut. Arya gagal menjualnya karena pembeli mengaku mendengar suara aneh dan beberapa benda berpindah tempat. Arya pun memutuskan tinggal dirumah tersebut sendirian. tapi...", "The house was ready to be sold, but there were consequences for what he had done by making a commotion inside the house. Arya failed to sell it because the buyer claimed to hear strange noises and saw some objects changing places. Arya then decided to live in the house alone. But...");
+        kamusInggris.Add("Ending 11: Ketiduran", "Ending 11: Overslept");
+        kamusInggris.Add("Arya melupakan tujuannya untuk menjual rumah, membuatnya telat membayarkan biaya rumah sakit. entah dengan cara apa Arya harus mencari uang. dia tetap harus menjaga istrinya.", "Arya forgot his goal of selling the house, causing him to be late in paying the hospital bills. Somehow, Arya has to find money. He still has to take care of his wife.");
+        kamusInggris.Add("Ending 12: Polisi", "Ending 12: Police");
+        kamusInggris.Add("Arya menelepon polisi dan mengatakan bahwa dia melihat pocong, tetapi polisi mengira Arya berbohong dan langsung menutup telepon.", "Arya called the police and said that he saw a pocong, but the police thought Arya was lying and immediately hung up the phone.");
+        kamusInggris.Add("Ending 13: Terjual dengan masalah", "Ending 13: Sold with Problems");
+        kamusInggris.Add("Arya menjadi orang yang rajin, mengumpulkan semua dokumen serta memberishkan rumah. Tetapi, Hal yang seharusnya tidak dia usik malah membuatnya keluar. pembeli selanjutnya mengaku bahwa mereka sering melihat sosok putih dibawah pohon dan di depan rumah.", "Arya became a diligent person, gathering all the documents and cleaning the house. However, the thing he shouldn't have disturbed made him leave instead. The next buyer claimed that they often saw a white figure under the tree and in front of the house.");
+        kamusInggris.Add("Ending 14: Gagal bersembunyi", "Ending 14: Failed to Hide");
+        kamusInggris.Add("Arya dipenuhi kegelisahan, gangguan yang ada dirumah ini sudah mencapai puncaknya, dia sudah tidak kuat dan memutuskan untuk bersembunyi dibawah kasur sampai pagi. tetapi, entitas itu berhasil menemukannya. Arya ditemukan dalam keadaan pingsan dan mengalami trauma berat.", "Arya was filled with anxiety, the disturbances in this house had reached their peak. He couldn't take it anymore and decided to hide under the bed until morning. However, the entity managed to find him. Arya was found unconscious and suffered severe trauma.");
+        kamusInggris.Add("Ending 15: Sembunyi", "Ending 15: Hide");
+        kamusInggris.Add("Arya memilih sembunyi setelah menerima berbagai gangguan dirumah tersebut. Arya berhasil bertahan di pagi hari dan langsung menjual rumah tersebut tanpa pikir panjang.", "Arya chose to hide after receiving various disturbances in the house. Arya managed to survive until morning and immediately sold the house without a second thought.");
+        kamusInggris.Add("Ending 16: Diikuti", "Ending 16: Followed");
+        kamusInggris.Add("Arya secara sembrono membawa pergi buku catatan kakaknya. Secara tidak langsung juga membawa arwah gentayangan bersamanya. Sekarang Arya sering melihat sosok putih berdiri di pojok ruangan kamarnya.", "Arya recklessly took his sibling's notebook away. Indirectly, he also brought the wandering spirit with him. Now Arya often sees a white figure standing in the corner of his room.");
+        kamusInggris.Add("Ending 17: Rest in peace", "Ending 17: Rest in Peace");
+        kamusInggris.Add("Arya berhasil membebaskan jiwa sang kakak. Dia adalah orang yang bertanggung jawab. Arwah sang kakak yang terjerat didunia pun telah tenang pergi ke alam sana.", "Arya successfully freed his sibling's soul. He is a responsible person. The sibling's spirit that was entangled in this world has peacefully gone to the afterlife.");
+        kamusInggris.Add("Ending 18: Ketindihan", "Ending 18: Sleep Paralysis");
+        kamusInggris.Add("Setelah membuat begitu banyak keributan, Arya akhirnya mendapat kehadirannya. dia berdiri di pojok kamarnya, menatap. Arya tidak bisa bergerak. Bau busuk itu sangat menyengat. Paginya, Arya ditemukan dalam keadaan tak sadarkan diri.", "After making so much commotion, Arya finally got its presence. It stood in the corner of his room, staring. Arya couldn't move. The foul stench was very pungent. In the morning, Arya was found unconscious.");
+        // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
+        // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
+        
+        // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
+        // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
     }
 
     public string Terjemahkan(string teksAsli)
@@ -270,12 +311,12 @@ public class TranslationManager : MonoBehaviour
         if (string.IsNullOrWhiteSpace(teksAsli)) return teksAsli;
         if (!gunakanBahasaInggris) return teksAsli; 
 
-        string teksBersih = teksAsli.Trim();
-
         if (kamusInggris.ContainsKey(teksAsli))
         {
             return kamusInggris[teksAsli];
         }
+        
+        // Peringatan kuning kalau ada teks yang lupa dimasukkan ke IsiKamus()
         Debug.LogWarning("Teks belum ada di kamus C#: " + teksAsli);
         return teksAsli; 
     }
