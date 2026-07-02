@@ -21553,7 +21553,6 @@ GameObject:
   - component: {fileID: 491706816}
   - component: {fileID: 491706818}
   - component: {fileID: 491706817}
-  - component: {fileID: 491706819}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -21680,18 +21679,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 491706815}
   m_CullTransparentMesh: 1
---- !u!114 &491706819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491706815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a10ebda2e20b23941abdd1026e24f671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AutoTranslateUI
 --- !u!1001 &495431847
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42146,11 +42133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17c39814448e4514097ec27937e0f725, type: 3}
       propertyPath: m_LocalScale.z
-      value: 9.480446
+      value: 11.2845745
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17c39814448e4514097ec27937e0f725, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.3091798
+      value: -3.283
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 17c39814448e4514097ec27937e0f725, type: 3}
       propertyPath: m_LocalPosition.y

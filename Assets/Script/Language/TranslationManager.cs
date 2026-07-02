@@ -110,6 +110,7 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Nomer Rumah", "House Number");
         kamusInggris.Add("Baca", "Read");
         kamusInggris.Add("Pintu", "Door");
+        kamusInggris.Add("Gemboknya masih terkunci. Aku butuh kuncinya.", "The padlock is still locked. I need the key.");
 
         // === KOMENTAR ===
         kamusInggris.Add("(Kotor sekali...)", "(Very dirty...)");
