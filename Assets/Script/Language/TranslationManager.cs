@@ -110,6 +110,8 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("Nomer Rumah", "House Number");
         kamusInggris.Add("Baca", "Read");
         kamusInggris.Add("Pintu", "Door");
+        kamusInggris.Add("Buku harian kakak", "Brother's Diary");
+        kamusInggris.Add("Gemboknya masih terkunci. Aku butuh kuncinya.", "The padlock is still locked. I need the key.");
 
         // === KOMENTAR ===
         kamusInggris.Add("(Kotor sekali...)", "(Very dirty...)");
@@ -259,19 +261,8 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("- Keran: Jangan mandi malam hari", "- Faucet: Don't take a bath at night");
         kamusInggris.Add("- Palu: Mereka mungkin sedikit marah", "- Hammer: They might be a little angry");
         kamusInggris.Add("- Kain kafan: Kamu sedikit menyinggung seseorang", "- Shroud: You slightly offended someone");
+        kamusInggris.Add("- Buku harian kakak: Kamu membuatnya marah besar!", "- Brother's Diary: You've already made him angry!");
 
-        //Ending
-        kamusInggris.Add("Laporan Sompral", "Sompral Report");
-        kamusInggris.Add("Riwayat Sompral:", "Sompral History:");
-        kamusInggris.Add("Ending 1: Melarikan Diri", "");
-        kamusInggris.Add("Arya memutuskan untuk pergi tanpa pikir panjang dari rumah tersebut, ia merasa menjual rumah keluarganya adalah hal yang buruk. Arya pun memutuskan untuk mencari uang dengan cara lain. Terlepas dari misteri rumah lama yang sudah ditinggalkan tersebut.", "");
-        kamusInggris.Add("Ending 2: Terjual Begitu Murah", "");
-        kamusInggris.Add("Arya menemukan orang untuk menjual rumah tersebut, tetapi.. karena ia tidak membawa beberapa dokumen terkait rumah itu. Rumah tersebut dihargai begitu murah. Meski begitu, uang tersebut masih dapat digunakan untuk mengobati istrinya yang sedang sakit.", "");
-        kamusInggris.Add("Ending 12: Polisi", "dawkodak");
-        kamusInggris.Add("Arya menelepon polisi dan mengatakan bahwa dia melihat pocong, tetapi polisi mengira Arya berbohong dan langsung menutup telepon. ", "awkdaow");
-        
-        // Kalau nanti ada teks kuning lagi di Console, tambahkannya seperti ini:
-        // kamusInggris.Add("Teks Indonesia", "Teks Inggris");
     }
 
     public string Terjemahkan(string teksAsli)
@@ -279,12 +270,12 @@ public class TranslationManager : MonoBehaviour
         if (string.IsNullOrWhiteSpace(teksAsli)) return teksAsli;
         if (!gunakanBahasaInggris) return teksAsli; 
 
+        string teksBersih = teksAsli.Trim();
+
         if (kamusInggris.ContainsKey(teksAsli))
         {
             return kamusInggris[teksAsli];
         }
-        
-        // Peringatan kuning kalau ada teks yang lupa dimasukkan ke IsiKamus()
         Debug.LogWarning("Teks belum ada di kamus C#: " + teksAsli);
         return teksAsli; 
     }
