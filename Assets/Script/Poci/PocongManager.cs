@@ -46,16 +46,19 @@ public class PocongManager : MonoBehaviour
 
     void Update()
     {
-        // Jika pocong sedang aktif ngintip, berhentikan waktu mundur
-        if (pocong.gameObject.activeInHierarchy) return; 
+    // TAMBAHAN: Hentikan timer dan cegah pocong spawn jika masih Malam 1
+    if (NightManager.instance != null && NightManager.instance.malamSekarang == 1) return;
 
-        timerSpawn -= Time.deltaTime;
+    // Jika pocong sedang aktif ngintip, berhentikan waktu mundur
+    if (pocong.gameObject.activeInHierarchy) return;
+
+    timerSpawn -= Time.deltaTime;
         
-        if (timerSpawn <= 0)
-        {
-            CobaSpawnPocong();
-            ResetTimer();
-        }
+    if (timerSpawn <= 0)
+    {
+        CobaSpawnPocong();
+        ResetTimer();
+    }
     }
 
     void ResetTimer()

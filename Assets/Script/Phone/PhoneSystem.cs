@@ -45,8 +45,8 @@ public class PhoneSystem : MonoBehaviour
 
     [Header("Database Rumah Chat (Runtime)")]
     public TextMeshProUGUI teksNamaKontakHeader; 
-    public TextMeshProUGUI layarTeksChat;        
-    public List<DataKontak> daftarKontak = new List<DataKontak>();        
+    public TextMeshProUGUI layarTeksChat;            
+    public List<DataKontak> daftarKontak = new List<DataKontak>();            
     public ScrollRect scrollRectChat; 
 
     [Header("Pengaturan Audio (SFX)")]
@@ -68,12 +68,8 @@ public class PhoneSystem : MonoBehaviour
     void Start()
     {
         if (phonePanel != null) phonePanel.SetActive(false);
-        BukaMenuUtama(); 
-        
+        BukaMenuUtama();          
         if (templateTombolKontak != null) templateTombolKontak.SetActive(false);
-        
-        // Jeda notifikasi awal dan GenerateSemuaTombolKontak SUDAH DIHAPUS dari sini.
-        // Sekarang sistem menunggu perintah murni dari StoryMessageManager.
     }
 
     void Update()
@@ -87,48 +83,50 @@ public class PhoneSystem : MonoBehaviour
     public void TogglePhone()
     {
         if (InventorySystem.instance != null && InventorySystem.instance.inventoryUI != null && InventorySystem.instance.inventoryUI.activeInHierarchy) return;
-
+        
         isPhoneOpen = !isPhoneOpen;
         if (phonePanel != null) phonePanel.SetActive(isPhoneOpen);
-
+        
         PlayerController player = FindAnyObjectByType<PlayerController>();
         PlayerInteract interact = FindAnyObjectByType<PlayerInteract>();
-
+        
         if (isPhoneOpen)
         {
             if (player != null) player.canMove = false;
             if (interact != null) interact.KlikBatal(); 
             Cursor.lockState = CursorLockMode.None; 
-            Cursor.visible = true;                  
+            Cursor.visible = true;                      
             BukaMenuUtama(); 
         }
         else
         {
             if (player != null) player.canMove = true;
-            Cursor.lockState = CursorLockMode.Locked;   
-            Cursor.visible = false; 
-            
+            Cursor.lockState = CursorLockMode.Locked;       
+            Cursor.visible = false;                         
             if (audioSource != null && audioSource.isPlaying) audioSource.Stop();
             if (prosesTelepon != null) StopCoroutine(prosesTelepon);
         }
     }
 
-    // Fungsi ini tetap dipertahankan karena akan dipanggil otomatis oleh fungsi TerimaPesanMasuk
     public void BuatSatuTombolKontak(string namaKontak)
     {
         if (templateTombolKontak == null || wadahTombolKontak == null) return;
-
+        
         GameObject tombolBaru = Instantiate(templateTombolKontak, wadahTombolKontak);
         tombolBaru.SetActive(true);
-
+        
         TextMeshProUGUI teksTombol = tombolBaru.GetComponentInChildren<TextMeshProUGUI>();
-        if (teksTombol != null) teksTombol.text = namaKontak;
-
+        if (teksTombol != null) 
+        {
+            // === TRANSLATE NAMA KONTAK DI TOMBOL ===
+            teksTombol.text = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(namaKontak) : namaKontak;
+        }
+        
         Button btn = tombolBaru.GetComponent<Button>();
         if (btn != null)
         {
             btn.onClick.RemoveAllListeners();
-            string namaLokal = namaKontak;
+            string namaLokal = namaKontak; // Simpan nama asli untuk pencarian data
             btn.onClick.AddListener(() => BukaLayarChat(namaLokal));
         }
     }
@@ -138,6 +136,7 @@ public class PhoneSystem : MonoBehaviour
     public void BukaLayarDial() { if (panelMenuUtama != null) panelMenuUtama.SetActive(false); if (panelKontak != null) panelKontak.SetActive(false); if (panelChat != null) panelChat.SetActive(false); if (panelDial != null) panelDial.SetActive(true); if (teksLayarDial != null) teksLayarDial.text = ""; if (teksStatusPanggilan != null) teksStatusPanggilan.text = ""; }
     public void TombolHome() { BukaMenuUtama(); }
     public void TombolKembali() { if (panelChat != null && panelChat.activeSelf) BukaLayarKontak(); else if ((panelKontak != null && panelKontak.activeSelf) || (panelDial != null && panelDial.activeSelf)) BukaMenuUtama(); else if (panelMenuUtama != null && panelMenuUtama.activeSelf) TogglePhone(); }
+    
     public void KetikAngka(string angka) { if (teksLayarDial != null) teksLayarDial.text += angka; if (audioSource != null && sfxTombolAngka != null) audioSource.PlayOneShot(sfxTombolAngka); }
     public void HapusAngka() { if (teksLayarDial != null && teksLayarDial.text.Length > 0) { teksLayarDial.text = teksLayarDial.text.Substring(0, teksLayarDial.text.Length - 1); } if (audioSource != null && sfxTombolAngka != null) audioSource.PlayOneShot(sfxTombolAngka); }
     
@@ -149,26 +148,34 @@ public class PhoneSystem : MonoBehaviour
         prosesTelepon = StartCoroutine(ProsesDeringTelepon(nomorDitekan));
     }
 
-    private IEnumerator ProcessDeringTelepon(string nomor) // Mengikuti nama internal yang kompatibel
+    private IEnumerator ProcessDeringTelepon(string nomor)
     {
         return ProsesDeringTelepon(nomor);
     }
 
     private IEnumerator ProsesDeringTelepon(string nomor)
     {
-        if (teksStatusPanggilan != null) teksStatusPanggilan.text = "Memanggil...";
+        if (teksStatusPanggilan != null) teksStatusPanggilan.text = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan("Memanggil...") : "Memanggil...";
         if (audioSource != null && sfxTeleponBerdering != null) { audioSource.clip = sfxTeleponBerdering; audioSource.loop = true; audioSource.Play(); }
+        
         yield return new WaitForSeconds(4f);
+        
         if (audioSource != null) { audioSource.Stop(); audioSource.loop = false; audioSource.clip = null; }
-
+        
         if (nomor == "911" || nomor == "112")
         {
-            if (teksStatusPanggilan != null) teksStatusPanggilan.text = "Tersambung...";
+            if (teksStatusPanggilan != null) teksStatusPanggilan.text = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan("Tersambung...") : "Tersambung...";
             yield return new WaitForSeconds(1f);
             if (eventEndingPolisi != null) eventEndingPolisi.Invoke();
         }
-        else if (nomor == "666") { if (teksStatusPanggilan != null) teksStatusPanggilan.text = "Panggilan terputus..."; }
-        else { if (teksStatusPanggilan != null) teksStatusPanggilan.text = "Nomor yang Anda tuju salah."; }
+        else if (nomor == "666") 
+        { 
+            if (teksStatusPanggilan != null) teksStatusPanggilan.text = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan("Panggilan terputus...") : "Panggilan terputus..."; 
+        }
+        else 
+        { 
+            if (teksStatusPanggilan != null) teksStatusPanggilan.text = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan("Nomor yang Anda tuju salah.") : "Nomor yang Anda tuju salah."; 
+        }
     }
 
     public void BukaLayarChat(string namaKontakDicari)
@@ -176,7 +183,12 @@ public class PhoneSystem : MonoBehaviour
         if (panelKontak != null) panelKontak.SetActive(false);
         if (panelChat != null) panelChat.SetActive(true);
         if (layarTeksChat != null) layarTeksChat.text = ""; 
-        if (teksNamaKontakHeader != null) teksNamaKontakHeader.text = namaKontakDicari;
+        
+        // === TRANSLATE HEADER NAMA KONTAK ===
+        if (teksNamaKontakHeader != null) 
+        {
+            teksNamaKontakHeader.text = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(namaKontakDicari) : namaKontakDicari;
+        }
 
         foreach (DataKontak data in daftarKontak)
         {
@@ -185,18 +197,32 @@ public class PhoneSystem : MonoBehaviour
                 string fullChat = "";
                 foreach (PesanChat pesan in data.riwayatChat)
                 {
-                    if (pesan.pengirim == "Arya") fullChat += "<align=right><color=#A8E6CF><b>" + pesan.pengirim + "</b>\n" + pesan.isiPesan + "</color></align>\n\n";
-                    else fullChat += "<align=left><b>" + pesan.pengirim + "</b>\n" + pesan.isiPesan + "</align>\n\n";
+                    // === TRANSLATE PENGIRIM DAN ISI PESAN ===
+                    string pengirimT = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(pesan.pengirim) : pesan.pengirim;
+                    string pesanT = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(pesan.isiPesan) : pesan.isiPesan;
+
+                    if (pesan.pengirim == "Arya") 
+                    {
+                        fullChat += "<align=right><color=#A8E6CF><b>" + pengirimT + "</b>\n" + pesanT + "</color></align>\n\n";
+                    }
+                    else 
+                    {
+                        fullChat += "<align=left><b>" + pengirimT + "</b>\n" + pesanT + "</align>\n\n";
+                    }
                 }
-                if (layarTeksChat != null) layarTeksChat.text = fullChat;
                 
+                if (layarTeksChat != null) layarTeksChat.text = fullChat;                 
                 Canvas.ForceUpdateCanvases();
                 if (scrollRectChat != null) scrollRectChat.verticalNormalizedPosition = 1f; 
                 return; 
             }
         }
         
-        if (layarTeksChat != null) layarTeksChat.text = "<i>Belum ada pesan dengan " + namaKontakDicari + "</i>";
+        // Jika belum ada chat
+        string teksKosong = "Belum ada pesan dengan " + namaKontakDicari;
+        string teksKosongT = TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(teksKosong) : teksKosong;
+        if (layarTeksChat != null) layarTeksChat.text = "<i>" + teksKosongT + "</i>";
+        
         Canvas.ForceUpdateCanvases();
         if (scrollRectChat != null) scrollRectChat.verticalNormalizedPosition = 1f;
     }
@@ -204,11 +230,9 @@ public class PhoneSystem : MonoBehaviour
     public void TerimaPesanMasuk(string namaPengirim, string isiPesan)
     {
         if (audioSource != null && sfxNotifikasiPesan != null) audioSource.PlayOneShot(sfxNotifikasiPesan);
-
-        // Cari tahu apakah pengirim sudah pernah dichat sebelumnya di list runtime
+        
         DataKontak kontak = daftarKontak.Find(k => k.namaKontak == namaPengirim);
         
-        // JIKA BELUM PERNAH ADA: Buat rumah chat baru dan daftarkan tombolnya ke layar kontak secara realtime!
         if (kontak == null)
         {
             kontak = new DataKontak();
@@ -224,7 +248,7 @@ public class PhoneSystem : MonoBehaviour
         pesanBaru.isiPesan = isiPesan;
         kontak.riwayatChat.Add(pesanBaru);
 
-        if (panelChat != null && panelChat.activeSelf && teksNamaKontakHeader != null && teksNamaKontakHeader.text == namaPengirim)
+        if (panelChat != null && panelChat.activeSelf && teksNamaKontakHeader != null && teksNamaKontakHeader.text == (TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(namaPengirim) : namaPengirim))
         {
             BukaLayarChat(namaPengirim);
         }

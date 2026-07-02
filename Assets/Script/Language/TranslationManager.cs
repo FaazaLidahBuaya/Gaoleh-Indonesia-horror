@@ -174,6 +174,30 @@ public class TranslationManager : MonoBehaviour
         kamusInggris.Add("(Serem banget rasanya...)", "(It feels so creepy...)");
         kamusInggris.Add("(Untuk membersihkan noda)", "(To clean the stain)");
 
+        //Phone
+        kamusInggris.Add("Memanggil...", "Call...");
+        kamusInggris.Add("Tersambung...", "Connected...");
+        kamusInggris.Add("Nomor yang Anda tuju salah.", "The number you dialed is incorrect.");
+        kamusInggris.Add("Panggilan terputus...", "Call disconnected...");
+        kamusInggris.Add("Kontak tidak dikenal", "Unknown Contact");
+        kamusInggris.Add("Pergi dari sini sebelum terlambat...", "Get out of here before it's too late...");
+        kamusInggris.Add("Pembeli", "Buyer");
+        kamusInggris.Add("Istrikuu", "My Wifee");
+        kamusInggris.Add("Halo sayang? entah kenapa peraasaan ku sedang tidak enak... kamu baik baik sajakan disana? semoga iya, aku merindukanmu disini.", "Hey, honey? I don’t know why, but I’m feeling a little down… Are you doing okay over there? I hope so—I miss you here.");
+        kamusInggris.Add("Rumah sakit", "Hospital");
+        kamusInggris.Add("Hilang", "Missing");
+        kamusInggris.Add("Berhati-hatilah", "Be careful");
+        kamusInggris.Add("Pengirim", "Sender");
+        kamusInggris.Add("Aku selalu mengawasimu", "I'm always watching you");
+        kamusInggris.Add("Disembunyikan", "Hidden");
+        kamusInggris.Add("Bebaskan aku dari penderitaan ini", "Free me from this suffering");
+        kamusInggris.Add("Info desa", "Village Information");
+        kamusInggris.Add("Mohon maaf karena desa sedang mengalami pemadaman listrik untuk sementara waktu dan akan berfungsi kembali besok pagi", "We apologize, but the village is currently experiencing a temporary power outage; service will resume tomorrow morning.");
+        kamusInggris.Add("Untuk dokumennya sendiri harus ada:\n1. Sertifikat hak milik\n2. KK\n3. Dokumen wajib pajak", "The required documents are as follows:\n1. Certificate of ownership\n2. Family Card (KK)\n3. Taxpayer registration documents");
+        kamusInggris.Add("Halo arya, katanya kamu ingin menjual rumah ya? saya bisa bantu buat mengurus beberapa hal... ", "Hi Arya, I heard you want to sell your house, right? I can help you take care of a few things... ");
+        kamusInggris.Add("Halo pak, untuk tagihan perawatan rumah sakit harus segera dibayarkan paling lama 3 hari ya... jika lebih, pihak rumah sakit tidak bisa menerima pasien lagi...", "Hello, sir. Hospital bills must be paid within 3 days at the latest... If payment is delayed beyond that, the hospital will no longer be able to admit patients...");
+        kamusInggris.Add("Halo lagi Arya, kamu sudah mengumpulkan semua dokumennya? kalau iya sekalian dong, bersihin rumahnya. saya mah bakal kasih bonus kalo rumahnya bersih...", "Hi again, Arya. Have you gathered all the documents yet? If so, go ahead and clean the house while you’re at it. I’ll give you a bonus if the house is clean...");
+
         //UI Main menu
         kamusInggris.Add("Jawa, Indonesia\n\nArya membutuhkan uang untuk biaya operasi istrinya. Dia berencana menjual rumah lama keluarganya.\n\nTapi, Rumah lama itu menyimpan hal lain yang masih misteri.","Java, Indonesia\n\nArya needs money for his wife's surgery. He plans to sell his old family house.\n\nBut, that old house holds another mystery.");
         kamusInggris.Add("MULAI", "START");
@@ -252,6 +276,7 @@ public class TranslationManager : MonoBehaviour
 
     public string Terjemahkan(string teksAsli)
     {
+        if (string.IsNullOrWhiteSpace(teksAsli)) return teksAsli;
         if (!gunakanBahasaInggris) return teksAsli; 
 
         if (kamusInggris.ContainsKey(teksAsli))

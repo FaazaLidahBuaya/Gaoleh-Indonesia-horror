@@ -7,9 +7,9 @@ public class SompralManager : MonoBehaviour
 
     [Header("Data Sompral Pemain")]
     public int totalPoinSompral = 0;
-    
+
     [Tooltip("Daftar kelakuan buruk yang akan di-print di akhir game")]
-    public List<string> daftarDosaPemain = new List<string>(); 
+    public List<string> daftarDosaPemain = new List<string>();
 
     void Awake()
     {
@@ -20,13 +20,12 @@ public class SompralManager : MonoBehaviour
     public void TambahSompral(int poin, string catatanUntukEnding)
     {
         totalPoinSompral += poin;
-        
+
         // Simpan ke buku catatan jika teksnya tidak kosong
         if (!string.IsNullOrEmpty(catatanUntukEnding))
         {
             daftarDosaPemain.Add(catatanUntukEnding);
         }
-
         Debug.Log("[SOMPRAL BERTAMBAH] Poin sekarang: " + totalPoinSompral + " | Aksi: " + catatanUntukEnding);
 
         // =========================================================
@@ -52,16 +51,36 @@ public class SompralManager : MonoBehaviour
         }
     }
 
-    // Fungsi ini nanti dipanggil oleh EndingManager untuk menampilkan dosa pemain
+    // =====================================================
+    // PENAMBAHAN SISTEM TRANSLATE PER BARIS (DIPERBAIKI)
+    // =====================================================
     public string DapatkanLaporanSompral()
     {
-        if (daftarDosaPemain.Count == 0) return "Kamu bertahan hidup dengan sangat sopan. Tidak ada gangguan yang terpancing.";
+        string teksAman = "Kamu bertahan hidup dengan sangat sopan. Tidak ada gangguan yang terpancing.";
+        
+        // Cek kalau pemain tidak usil
+        if (daftarDosaPemain.Count == 0) 
+        {
+            return TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(teksAman) : teksAman;
+        }
 
-        string laporan = "Riwayat Sompral:\n";
+        // Terjemahkan Header
+        string header = "Riwayat Sompral:";
+        string laporan = (TranslationManager.instance != null ? TranslationManager.instance.Terjemahkan(header) : header) + "\n";
+
+        // Looping untuk menerjemahkan masing-masing dosa HANYA per barisnya
         foreach (string dosa in daftarDosaPemain)
         {
-            laporan += "- " + dosa + "\n";
+            string barisDosa = "- " + dosa;
+            
+            if (TranslationManager.instance != null)
+            {
+                barisDosa = TranslationManager.instance.Terjemahkan(barisDosa);
+            }
+            
+            laporan += barisDosa + "\n";
         }
+        
         return laporan;
     }
 }
